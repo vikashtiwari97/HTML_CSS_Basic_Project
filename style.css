@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#nav-list{
+    width: 100%;
+    list-style: none;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    /* margin-left: 15px;
+    margin-right: 15px; */
+    align-items: center;
+    padding: 15px;
+    font-family: 'Cinzel', serif;
+    font-family: 'Merriweather', serif;
+}
+nav{
+    width: 100%;
+
+}
+.container{
+    height: 100%;
+    width: 100%;
+    overflow-x: none;
+    background-color: #e2e5e8;
+    background-image: linear-gradient(98deg, #e2e5e8 0%, #ffffff 100%);
+}
+.nav-container{
+    width: 100vw;
+    height: 80px;
+    /* background-color: rgba(255, 127, 80, 0.847); */
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#nav-head{
+    font-size: 2.8rem;
+    color: #ffffff;
+}
+a{
+    text-decoration: none;
+    color: azure;
+}
+#nav-items{
+    display: flex;
+    gap: 20px;
+}
+.footer-box{
+    background-color: black;
+    width: 100%;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+.footer-box p {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+.content-box{
+    width: 50%;
+    margin: auto;
+    /* border: 1px solid black; */
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+    box-shadow: 0px 0px 30px black;
+}
+.items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.right-box{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear 0s;
+}
+.right-box img{
+    height: 400px;
+    border-radius: 20px;
+    transition: all 0.6s linear 0s;
+}
+
+.right-box:hover{
+    transform: scale(1.1);
+}
+.left-box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Merriweather', serif;
+}
+.left-box h2{
+    font-size: 2rem;
+}
+.in-box{
+    font-size: 1.3rem;
+}
+.recipe-box{
+    font-size: 1.1rem;
+}
+.right-box .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(36, 34, 34, 0.713);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+}
+.right-box:hover .overlay{
+    opacity: 1;
+}
+.right-box .overlay span{
+    color: #ffffff;
+    font-size: 1.2rem;
+    transform: none;
+}
